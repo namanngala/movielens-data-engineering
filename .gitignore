@@ -1,19 +1,18 @@
-# virtual env / python cache
-venv/
-.env/
-__pycache__/
-*.py[cod]
+# Ignore all Parquet files except analytics CSVs
+*.parquet
 
-# data (ignore all except small docs)
+# But keep CSVs in analytics
+!output/analytics/csvs/*.csv
+
+# Ignore raw data files except README
 data/*
 !data/README.txt
 
-# output folders (ignore all)
+# Ignore all output folders except analytics CSVs
 output/**
+!output/analytics/csvs/
 
-# system files
-.DS_Store
-Thumbs.db
-
-# local helper files
-project_structure.txt
+# Ignore Python cache and venv
+__pycache__/
+*.pyc
+venv/
