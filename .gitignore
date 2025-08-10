@@ -1,0 +1,19 @@
+# virtual env / python cache
+venv/
+.env/
+__pycache__/
+*.py[cod]
+
+# data (ignore all except small docs)
+data/*
+!data/README.txt
+
+# output folders (ignore all)
+output/**
+
+# system files
+.DS_Store
+Thumbs.db
+
+# local helper files
+project_structure.txt
