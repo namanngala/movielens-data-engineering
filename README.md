@@ -25,6 +25,7 @@ This repository implements a **true end-to-end batch data pipeline** on the **Mo
 
 ## Project Structure
 
+```
 movielens-data-engineering/
 │
 ├── data/
@@ -54,6 +55,8 @@ movielens-data-engineering/
 │ ├── 6_generate_analytics_csvs.py
 │
 └── README.md
+
+```
 
 
 ---
@@ -153,6 +156,7 @@ Final cleaned data: output/analytics/ratings_cleaned_final.parquet
 Analytics CSVs: output/analytics/csvs/
 Connect CSVs to Google Sheets → Looker Studio for BI dashboards.
 
+```
 
 
 
