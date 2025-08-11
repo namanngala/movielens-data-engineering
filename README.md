@@ -129,19 +129,20 @@ movielens-data-engineering/
 
 ## How to Run
 
-### 1. Clone the repository
 ```bash
+1. Clone the repository
+
 git clone https://github.com/namanngala/movielens-data-engineering.git
 cd movielens-data-engineering
 
-### 2. Install dependencies
+2. Install dependencies
 
 pip install -r requirements.txt
 
-### 3. Prepare data
+3. Prepare data
 Place the MovieLens dataset (movies.csv, ratings.csv) in the data/ folder.
 
-### 4. Run the pipeline
+4. Run the pipeline
 
 python scripts/1_ingest_to_parquet.py
 python scripts/2_validate_batches.py
@@ -150,7 +151,7 @@ python scripts/4_merge_batches.py
 python scripts/5_clean_and_sort.py
 python scripts/6_generate_analytics_csvs.py
 
-### 5. View outputs
+5. View outputs
 
 Final cleaned data: output/analytics/ratings_cleaned_final.parquet
 Analytics CSVs: output/analytics/csvs/
