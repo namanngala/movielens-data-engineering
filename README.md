@@ -117,10 +117,6 @@ movielens-data-engineering/
 - **Challenge:** Processing 25M+ rows locally without OOM.
 - **Solution:** Chunked reading & row-group streaming; avoided `pd.concat`.
 
-### GitHub file size limit (100MB)
-- **Challenge:** Generated CSVs like `rating_outliers.csv` exceeded the limit.
-- **Solution:** `.gitignore` large files and provide sampled versions.
-
 ### Maintaining reproducibility
 - **Challenge:** Consistent output across runs.
 - **Solution:** Deterministic deduplication key + global sort order.
